@@ -12,7 +12,8 @@ content/
 ├── ai/
 ├── bitcoin/
 ├── philosophy/
-└── short-stories/
+├── short-stories/
+└── gaming/
 templates/
 └── post.md               # copy this when starting a new post
 ```
