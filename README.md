@@ -1,6 +1,6 @@
 # Yosef's Braindump
 
-Bilingual (EN/ID) notebook published at <https://yoseflaw.github.io/>.
+Personal notebook published at <https://yoseflaw.github.io/>.
 
 Built with [Quartz v4](https://quartz.jzhao.xyz/). Content in `content/`, deploy via GitHub Actions on push to `main`.
 
@@ -8,21 +8,18 @@ Built with [Quartz v4](https://quartz.jzhao.xyz/). Content in `content/`, deploy
 
 ```
 content/
-├── index.md              # bilingual landing
-├── en/                   # English
-│   ├── ai/
-│   ├── bitcoin/
-│   ├── philosophy/
-│   └── short-stories/
-└── id/                   # Bahasa Indonesia
-    └── (same four topics)
+├── index.md              # landing
+├── ai/
+├── bitcoin/
+├── philosophy/
+└── short-stories/
 templates/
 └── post.md               # copy this when starting a new post
 ```
 
 ## Write a post
 
-1. Copy `templates/post.md` into the right folder, e.g. `content/en/ai/my-post.md`.
+1. Copy `templates/post.md` into the right folder, e.g. `content/ai/my-post.md`.
 2. Fill in frontmatter and write.
 3. Commit and push — the workflow deploys in ~2 minutes.
 
@@ -37,5 +34,5 @@ npx quartz build --serve
 ## Notes
 
 - `draft: true` in frontmatter hides a post from the published site.
-- Wiki-style links work across languages: `[[id/ai/my-post|Baca versi Bahasa Indonesia]]`.
+- Wiki-style links between posts: `[[bitcoin/my-post|custom label]]`.
 - `baseUrl` and theme live in `quartz.config.ts`.

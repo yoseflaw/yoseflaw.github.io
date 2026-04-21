@@ -1,12 +1,11 @@
 ---
 title: Yosef's Braindump
+description: Notes and essays on AI, Bitcoin, Philosophy, and Short Stories.
 ---
 
-A bilingual notebook of things I'm thinking about.
+A notebook of things I'm thinking about.
 
-- [English](en/)
-- [Bahasa Indonesia](id/)
-
----
-
-Sebuah catatan dwibahasa tentang hal-hal yang sedang saya pikirkan.
+- [[ai/index|AI]]
+- [[bitcoin/index|Bitcoin]]
+- [[philosophy/index|Philosophy]]
+- [[short-stories/index|Short Stories]]
