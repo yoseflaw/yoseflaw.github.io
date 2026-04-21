@@ -10,10 +10,10 @@ Built with [Quartz v4](https://quartz.jzhao.xyz/). Content in `content/`, deploy
 content/
 ├── index.md              # landing
 ├── ai/
-├── bitcoin/
+├── finance/
 ├── philosophy/
 ├── short-stories/
-└── gaming/
+└── hobbies/
 templates/
 └── post.md               # copy this when starting a new post
 ```
