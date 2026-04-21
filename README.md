@@ -1,17 +1,41 @@
-# Quartz v4
+# Yosef's Braindump
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+Bilingual (EN/ID) notebook published at <https://yoseflaw.github.io/>.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Built with [Quartz v4](https://quartz.jzhao.xyz/). Content in `content/`, deploy via GitHub Actions on push to `main`.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## Structure
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+```
+content/
+├── index.md              # bilingual landing
+├── en/                   # English
+│   ├── ai/
+│   ├── bitcoin/
+│   ├── philosophy/
+│   └── short-stories/
+└── id/                   # Bahasa Indonesia
+    └── (same four topics)
+templates/
+└── post.md               # copy this when starting a new post
+```
 
-## Sponsors
+## Write a post
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+1. Copy `templates/post.md` into the right folder, e.g. `content/en/ai/my-post.md`.
+2. Fill in frontmatter and write.
+3. Commit and push — the workflow deploys in ~2 minutes.
+
+## Local preview
+
+```bash
+npm install            # first time only
+npx quartz build --serve
+# open http://localhost:8080
+```
+
+## Notes
+
+- `draft: true` in frontmatter hides a post from the published site.
+- Wiki-style links work across languages: `[[id/ai/my-post|Baca versi Bahasa Indonesia]]`.
+- `baseUrl` and theme live in `quartz.config.ts`.
