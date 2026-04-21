@@ -1,5 +1,5 @@
 ---
-title: Philosophy
+title: Humans
 ---
 
 Notes and essays on philosophy.

@@ -1,5 +1,5 @@
 ---
-title: Short Stories
+title: Stories
 ---
 
 Short fiction.
