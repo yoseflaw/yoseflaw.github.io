@@ -1,0 +1,5 @@
+---
+title: Cerpen
+---
+
+Cerita pendek.
